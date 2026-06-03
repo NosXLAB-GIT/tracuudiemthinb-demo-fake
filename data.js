@@ -1,24 +1,10 @@
 // ============================================================
-// FILE DỮ LIỆU THÍ SINH - KỲ THI TUYỂN SINH LỚP 10 THPT
-// Sở Giáo dục và Đào tạo Ninh Bình - Năm học 2026-2027
+// CO SỞ DỮ LIỆU TOÀN DIỆN THÍ SINH - KỲ THI LỚP 10 THPT
+// Hội đồng thi: THPT Chuyên Lương Văn Tụy - Năm học 2026-2027
+// Dữ liệu: Đầy đủ từ Phòng 1 đến Phòng 57 (Không viết tắt)
 // ============================================================
-// Cấu trúc mỗi bản ghi:
-// "SBD": {
-//   hoTen: "HỌ VÀ TÊN",
-//   gioiTinh: "Nam" | "Nữ",
-//   ngaySinh: "DD/MM/YYYY",
-//   truong: "Tên trường THCS",
-//   diem: {
-//     toan: 8.5,          // hoặc null nếu chưa có
-//     nguVan: 7.0,
-//     tiengAnh: 6.5,
-//     monChuyen: null,    // chỉ dành cho trường chuyên
-//     // Gắn dấu (*) nếu là điểm sau phúc khảo, ví dụ: toan: "8.5*"
-//   }
-// }
-// Nếu chưa có điểm, để diem: null
 
-onst duLieu = {
+const duLieu = {
   // ===== PHÒNG THI 1 =====
   "010001": { hoTen: "BÙI BẢO AN", gioiTinh: "Nam", ngaySinh: "20/09/2011", truong: "THCS Lê Hồng Phong", diem: null },
   "010002": { hoTen: "NGUYỄN ĐỨC AN", gioiTinh: "Nam", ngaySinh: "27/09/2011", truong: "THCS Yên Thắng", diem: null },
@@ -1156,8 +1142,117 @@ onst duLieu = {
   "011032": { hoTen: "LÊ NGỌC PHƯƠNG LINH", gioiTinh: "Nữ", ngaySinh: "04/11/2011", truong: "THCS Trương Hán Siêu", diem: null },
   "011033": { hoTen: "NGUYỄN KHÁNH LINH", gioiTinh: "Nữ", ngaySinh: "06/01/2011", truong: "THCS Khánh Thượng", diem: null },
 
+// PHÒNG 53
+  "011034": { hoTen: "PHẠM DIỆU LINH", gioiTinh: "Nữ", ngaySinh: "13/10/2011", truong: "THCS Ninh Mỹ", diem: null },
+  "011035": { hoTen: "TRỊNH THỊ PHƯƠNG LINH", gioiTinh: "Nữ", ngaySinh: "06/07/2011", truong: "THCS Yên Thịnh", diem: null },
+  "011036": { hoTen: "VŨ PHƯƠNG LINH", gioiTinh: "Nữ", ngaySinh: "31/08/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011037": { hoTen: "VŨ THỦY LINH", gioiTinh: "Nữ", ngaySinh: "30/03/2011", truong: "THCS Gia Phú", diem: null },
+  "011038": { hoTen: "NGUYỄN NHƯ LOAN", gioiTinh: "Nữ", ngaySinh: "28/09/2011", truong: "THCS Ninh Bình - Bạc Liêu", diem: null },
+  "011039": { hoTen: "PHẠM THANH MAI", gioiTinh: "Nữ", ngaySinh: "08/01/2011", truong: "THCS Đinh Tiên Hoàng - Bích Đào", diem: null },
+  "011040": { hoTen: "VŨ YẾN MINH", gioiTinh: "Nữ", ngaySinh: "29/07/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011041": { hoTen: "ĐINH THU KIM NGÂN", gioiTinh: "Nữ", ngaySinh: "11/09/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011042": { hoTen: "CAO BẢO NGỌC", gioiTinh: "Nữ", ngaySinh: "26/03/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011043": { hoTen: "LÊ BÙI BẢO NGỌC", gioiTinh: "Nữ", ngaySinh: "10/01/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
+  "011044": { hoTen: "PHẠM NGUYỄN KHÁNH NGỌC", gioiTinh: "Nữ", ngaySinh: "20/04/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011045": { hoTen: "PHẠM THỊ THẢO NGỌC", gioiTinh: "Nữ", ngaySinh: "14/02/2011", truong: "THCS Yên Đồng", diem: null },
+  "011046": { hoTen: "HOÀNG MINH NGUYỆT", gioiTinh: "Nữ", ngaySinh: "30/12/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011047": { hoTen: "LÊ VŨ PHƯƠNG NHI", gioiTinh: "Nữ", ngaySinh: "07/01/2011", truong: "THCS Ninh Giang", diem: null },
+  "011048": { hoTen: "VŨ ĐỖ HOÀNG PHÚC", gioiTinh: "Nam", ngaySinh: "10/05/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011049": { hoTen: "ĐINH THỊ QUỲNH PHƯƠNG", gioiTinh: "Nữ", ngaySinh: "14/03/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011050": { hoTen: "NGUYỄN NGỌC MINH PHƯƠNG", gioiTinh: "Nữ", ngaySinh: "02/04/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011051": { hoTen: "TRẦN THỊ HÀ PHƯƠNG", gioiTinh: "Nữ", ngaySinh: "21/04/2011", truong: "THCS Khánh Nhạc", diem: null },
+
+  // PHÒNG 54[cite: 1]
+  "011052": { hoTen: "TÔ MINH QUANG", gioiTinh: "Nam", ngaySinh: "19/12/2011", truong: "THCS Ninh Thành", diem: null },
+  "011053": { hoTen: "NGUYỄN THỊ NHƯ QUỲNH", gioiTinh: "Nữ", ngaySinh: "27/04/2011", truong: "THCS Đinh Tiên Hoàng - Bích Đào", diem: null },
+  "011054": { hoTen: "PHẠM ĐỨC THÀNH", gioiTinh: "Nam", ngaySinh: "12/05/2011", truong: "THCS Nguyễn Minh Không", diem: null },
+  "011055": { hoTen: "BÙI THỊ THƠM", gioiTinh: "Nữ", ngaySinh: "16/07/2011", truong: "THCS Yên Đồng", diem: null },
+  "011056": { hoTen: "ĐÀO DIỆP ANH THƯ", gioiTinh: "Nữ", ngaySinh: "03/10/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011057": { hoTen: "ĐẶNG ANH THƯ", gioiTinh: "Nữ", ngaySinh: "13/06/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011058": { hoTen: "VŨ ANH THƯ", gioiTinh: "Nữ", ngaySinh: "15/05/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011059": { hoTen: "TRẦN THỦY TIÊN", gioiTinh: "Nữ", ngaySinh: "20/02/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011060": { hoTen: "ĐỒNG THỊ HUYỀN TRANG", gioiTinh: "Nữ", ngaySinh: "04/06/2011", truong: "THCS Nguyễn Minh Không", diem: null },
+  "011061": { hoTen: "NGUYỄN TRẦN QUỲNH TRANG", gioiTinh: "Nữ", ngaySinh: "19/10/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011062": { hoTen: "DƯƠNG NGỌC BẢO TRÂM", gioiTinh: "Nữ", ngaySinh: "02/10/2011", truong: "THCS Trường Yên", diem: null },
+  "011063": { hoTen: "TRẦN BẢO TRÂN", gioiTinh: "Nữ", ngaySinh: "05/05/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011064": { hoTen: "NGUYỄN LÊ CẨM VÂN", gioiTinh: "Nữ", ngaySinh: "30/11/2011", truong: "THCS Trường Yên", diem: null },
+  "011065": { hoTen: "PHẠM THỊ TƯỜNG VI", gioiTinh: "Nữ", ngaySinh: "13/04/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
+  "011066": { hoTen: "NGUYỄN KHÁNH VY", gioiTinh: "Nữ", ngaySinh: "19/04/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011067": { hoTen: "NGUYỄN THẢO VY", gioiTinh: "Nữ", ngaySinh: "03/09/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011068": { hoTen: "NGUYỄN THỊ XUÂN", gioiTinh: "Nữ", ngaySinh: "25/02/2011", truong: "THCS Ninh Vân", diem: null },
+  "011069": { hoTen: "TRẦN THỊ HẢI YẾN", gioiTinh: "Nữ", ngaySinh: "26/01/2011", truong: "THCS Lý Tự Trọng", diem: null },
+
+  // PHÒNG 55[cite: 1]
+  "011070": { hoTen: "LÊ THỊ THANH AN", gioiTinh: "Nữ", ngaySinh: "08/05/2011", truong: "THCS Khánh Thượng", diem: null },
+  "011071": { hoTen: "BÙI MINH ANH", gioiTinh: "Nữ", ngaySinh: "04/12/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011072": { hoTen: "ĐẶNG BẢO ANH", gioiTinh: "Nữ", ngaySinh: "03/09/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011073": { hoTen: "ĐINH PHẠM PHƯƠNG ANH", gioiTinh: "Nữ", ngaySinh: "11/04/2011", truong: "THCS Ninh Khang", diem: null },
+  "011074": { hoTen: "LÊ HOÀNG ANH", gioiTinh: "Nam", ngaySinh: "27/05/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011075": { hoTen: "LÊ MAI ANH", gioiTinh: "Nữ", ngaySinh: "23/09/2011", truong: "THCS Đinh Tiên Hoàng - Bích Đào", diem: null },
+  "011076": { hoTen: "NGUYỄN LAN ANH", gioiTinh: "Nữ", ngaySinh: "26/02/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011077": { hoTen: "NGUYỄN NGỌC TRÂM ANH", gioiTinh: "Nữ", ngaySinh: "15/04/2011", truong: "THCS Ninh Thành", diem: null },
+  "011078": { hoTen: "PHẠM MAI ANH", gioiTinh: "Nữ", ngaySinh: "22/10/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011079": { hoTen: "HOÀNG NGỌC ÁNH", gioiTinh: "Nữ", ngaySinh: "13/07/2011", truong: "THCS thị trấn Yên Ninh", diem: null },
+  "011080": { hoTen: "LƯƠNG NGỌC ÁNH", gioiTinh: "Nữ", ngaySinh: "09/08/2011", truong: "THCS Ninh Sơn", diem: null },
+  "011081": { hoTen: "VŨ THỊ MINH ÁNH", gioiTinh: "Nữ", ngaySinh: "04/12/2011", truong: "THCS Ninh Bình - Bạc Liêu", diem: null },
+  "011082": { hoTen: "TRẦN ĐẶNG DUY BẢO", gioiTinh: "Nam", ngaySinh: "20/11/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011083": { hoTen: "NGUYỄN NGỌC BẢO CHÂM", gioiTinh: "Nữ", ngaySinh: "23/10/2011", truong: "THCS Khánh Thượng", diem: null },
+  "011084": { hoTen: "VŨ MINH CHÂU", gioiTinh: "Nữ", ngaySinh: "06/08/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011085": { hoTen: "HOÀNG THỦY CHI", gioiTinh: "Nữ", ngaySinh: "06/07/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011086": { hoTen: "PHẠM ÁNH CHÚC", gioiTinh: "Nữ", ngaySinh: "21/10/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011087": { hoTen: "ĐINH THỊ DIỆU", gioiTinh: "Nữ", ngaySinh: "20/02/2011", truong: "THCS Yên Thắng", diem: null },
+  "011088": { hoTen: "MÀN CHÍ DŨNG", gioiTinh: "Nam", ngaySinh: "12/06/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011089": { hoTen: "BÙI HƯƠNG GIANG", gioiTinh: "Nữ", ngaySinh: "26/08/2011", truong: "THCS Ninh Giang", diem: null },
+  "011090": { hoTen: "ĐINH THỊ VÂN GIANG", gioiTinh: "Nữ", ngaySinh: "03/02/2011", truong: "THCS Ninh Thành", diem: null },
+  "011091": { hoTen: "LÊ HOÀNG HÀ", gioiTinh: "Nam", ngaySinh: "24/06/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011092": { hoTen: "TRẦN THỊ THU HÀ", gioiTinh: "Nữ", ngaySinh: "26/01/2011", truong: "THCS Kim Thái", diem: null },
+  "011093": { hoTen: "TRẦN THU HẰNG", gioiTinh: "Nữ", ngaySinh: "01/12/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
+
+  // PHÒNG 56[cite: 1]
+  "011094": { hoTen: "PHẠM KHÁNH HƯNG", gioiTinh: "Nam", ngaySinh: "01/10/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011095": { hoTen: "LÊ TRẦN GIÁNG HƯƠNG", gioiTinh: "Nữ", ngaySinh: "21/04/2011", truong: "THCS Đinh Tiên Hoàng - Bích Đào", diem: null },
+  "011096": { hoTen: "PHẠM NGUYÊN KHÔI", gioiTinh: "Nam", ngaySinh: "16/06/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011097": { hoTen: "TRẦN TUẤN KIỆT", gioiTinh: "Nam", ngaySinh: "16/10/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011098": { hoTen: "ĐINH NGỌC LAN", gioiTinh: "Nữ", ngaySinh: "21/09/2011", truong: "THCS Gia Phong", diem: null },
+  "011099": { hoTen: "LÃ NGỌC LAN", gioiTinh: "Nữ", ngaySinh: "09/12/2011", truong: "THCS Khánh Cư", diem: null },
+  "011100": { hoTen: "BÙI HÀ LINH", gioiTinh: "Nữ", ngaySinh: "06/12/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011101": { hoTen: "ĐÀO MAI LINH", gioiTinh: "Nữ", ngaySinh: "10/07/2011", truong: "THCS Ninh Vân", diem: null },
+  "011102": { hoTen: "ĐINH KHÁNH LINH", gioiTinh: "Nữ", ngaySinh: "18/12/2011", truong: "THCS Đinh Tiên Hoàng - Bích Đào", diem: null },
+  "011103": { hoTen: "ĐINH THỊ NGỌC LINH", gioiTinh: "Nữ", ngaySinh: "16/05/2011", truong: "THCS Ninh Giang", diem: null },
+  "011104": { hoTen: "NGÔ THỊ KHÁNH LINH", gioiTinh: "Nữ", ngaySinh: "16/06/2011", truong: "THCS Lê Quý Đôn", diem: null },
+  "011105": { hoTen: "PHẠM BẢO LINH", gioiTinh: "Nữ", ngaySinh: "05/06/2011", truong: "THCS Yên Thịnh", diem: null },
+  "011106": { hoTen: "TRẦN THỊ TUYẾT MAI", gioiTinh: "Nữ", ngaySinh: "03/04/2011", truong: "THCS Khánh Hội", diem: null },
+  "011107": { hoTen: "VŨ TUỆ MẪN", gioiTinh: "Nữ", ngaySinh: "06/12/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011108": { hoTen: "NGUYỄN TÂN MINH", gioiTinh: "Nam", ngaySinh: "27/12/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011109": { hoTen: "LÊ VŨ HÀ MY", gioiTinh: "Nữ", ngaySinh: "16/12/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011110": { hoTen: "VŨ TRÀ MY", gioiTinh: "Nữ", ngaySinh: "07/09/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
+  "011111": { hoTen: "ĐẶNG HÀ BẢO NGỌC", gioiTinh: "Nữ", ngaySinh: "02/08/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011112": { hoTen: "LÊ BẢO NGỌC", gioiTinh: "Nữ", ngaySinh: "09/07/2011", truong: "THCS Mai Sơn", diem: null },
+
+  // PHÒNG 57[cite: 1]
+  "011113": { hoTen: "NGUYỄN KHÁNH NGỌC", gioiTinh: "Nữ", ngaySinh: "13/04/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011114": { hoTen: "PHẠM MAI NGUYÊN", gioiTinh: "Nữ", ngaySinh: "06/06/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011115": { hoTen: "PHẠM MINH NGUYỆT", gioiTinh: "Nữ", ngaySinh: "17/11/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011116": { hoTen: "ĐINH TRỌNG NHÂN", gioiTinh: "Nam", ngaySinh: "06/03/2011", truong: "THCS Mai Sơn", diem: null },
+  "011117": { hoTen: "NGUYỄN HOÀNG TUYẾT NHI", gioiTinh: "Nữ", ngaySinh: "30/11/2011", truong: "THCS Ninh Bình - Bạc Liêu", diem: null },
+  "011118": { hoTen: "TẠ NGUYỄN THU NHI", gioiTinh: "Nữ", ngaySinh: "08/10/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011119": { hoTen: "PHẠM KIM OANH", gioiTinh: "Nữ", ngaySinh: "13/09/2011", truong: "THCS Khánh Lợi", diem: null },
+  "011120": { hoTen: "ĐỖ THẾ PHONG", gioiTinh: "Nam", ngaySinh: "10/09/2011", truong: "THCS Lê Hồng Phong", diem: null },
+  "011121": { hoTen: "LÊ PHẠM HÀ PHƯƠNG", gioiTinh: "Nữ", ngaySinh: "18/08/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011122": { hoTen: "PHẠM KHÁNH PHƯƠNG", gioiTinh: "Nam", ngaySinh: "09/11/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011123": { hoTen: "VŨ VĂN QUÝ", gioiTinh: "Nam", ngaySinh: "01/11/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011124": { hoTen: "ĐINH THỊ PHƯƠNG THẢO", gioiTinh: "Nữ", ngaySinh: "27/03/2011", truong: "THCS Ninh Thành", diem: null },
+  "011125": { hoTen: "ĐINH HIẾU THIỆN", gioiTinh: "Nam", ngaySinh: "27/10/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011126": { hoTen: "ĐÀO XUÂN ANH THƯ", gioiTinh: "Nữ", ngaySinh: "09/08/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011127": { hoTen: "TẠ ANH THƯ", gioiTinh: "Nữ", ngaySinh: "14/12/2011", truong: "THCS Lý Tự Trọng", diem: null },
+  "011128": { hoTen: "ĐINH QUÝ TRỌNG", gioiTinh: "Nam", ngaySinh: "12/05/2011", truong: "THCS Trương Hán Siêu", diem: null },
+  "011129": { hoTen: "BÙI THANH TRÚC", gioiTinh: "Nữ", ngaySinh: "23/11/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
+  "011130": { hoTen: "ĐỖ THỊ HỒNG VUI", gioiTinh: "Nữ", ngaySinh: "11/09/2011", truong: "THCS Khánh An", diem: null }
 };
 
+// ============================================================
+// HÀM KHỞI TẠO ĐIỂM NGẪU NHIÊN (DEVELOPMENT ONLY)
+// ============================================================
 function taoDiem() {
     for (const sbd in duLieu) {
         if (duLieu[sbd].diem === null) {
@@ -1165,14 +1260,11 @@ function taoDiem() {
                 toan: +(Math.random() * 4 + 6).toFixed(2),
                 nguVan: +(Math.random() * 4 + 6).toFixed(2),
                 tiengAnh: +(Math.random() * 4 + 6).toFixed(2),
-                // Sửa từ null thành một con số ngẫu nhiên (ví dụ từ 5 đến 10)
                 monChuyen: +(Math.random() * 5 + 5).toFixed(2) 
             };
         }
     }
 }
-// Chạy khởi tạo dữ liệu điểm
-taoDiem();
 
-// Xuất dữ liệu ra phạm vi toàn cục (để file html đọc được)
-window.duLieu = duLieu;
+taoDiem(); // Thực thi hàm tạo điểm ngẫu nhiên[cite: 2]
+window.duLieu = duLieu; // Xuất dữ liệu ra phạm vi toàn cục[cite: 2]
