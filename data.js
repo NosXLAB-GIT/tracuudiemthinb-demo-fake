@@ -1247,8 +1247,13 @@ const duLieu = {
   "011127": { hoTen: "TẠ ANH THƯ", gioiTinh: "Nữ", ngaySinh: "14/12/2011", truong: "THCS Lý Tự Trọng", diem: null },
   "011128": { hoTen: "ĐINH QUÝ TRỌNG", gioiTinh: "Nam", ngaySinh: "12/05/2011", truong: "THCS Trương Hán Siêu", diem: null },
   "011129": { hoTen: "BÙI THANH TRÚC", gioiTinh: "Nữ", ngaySinh: "23/11/2011", truong: "THCS Đinh Tiên Hoàng - Ninh Mỹ", diem: null },
-  "011130": { hoTen: "ĐỖ THỊ HỒNG VUI", gioiTinh: "Nữ", ngaySinh: "11/09/2011", truong: "THCS Khánh An", diem: null }
+  "011130": { hoTen: "ĐỖ THỊ HỒNG VUI", gioiTinh: "Nữ", ngaySinh: "11/09/2011", truong: "THCS Khánh An", diem: null },
+
+  // riêng
+    "080142": { hoTen: "ĐỖ TRUNG KIÊN", gioiTinh: "Nữ", ngaySinh: "01/04/2011", truong: "THCS Lê Hồng Phong", diem: null }
+
 };
+
 
 // ============================================================
 // HÀM KHỞI TẠO ĐIỂM NGẪU NHIÊN (DEVELOPMENT ONLY)
@@ -1256,15 +1261,20 @@ const duLieu = {
 function taoDiem() {
     for (const sbd in duLieu) {
         if (duLieu[sbd].diem === null) {
+            // Khởi tạo 3 môn cơ bản trước
             duLieu[sbd].diem = {
                 toan: +(Math.random() * 4 + 6).toFixed(2),
                 nguVan: +(Math.random() * 4 + 6).toFixed(2),
-                tiengAnh: +(Math.random() * 4 + 6).toFixed(2),
-                monChuyen: +(Math.random() * 5 + 5).toFixed(2) 
+                tiengAnh: +(Math.random() * 4 + 6).toFixed(2)
             };
+
+            // Nếu KHÔNG PHẢI là thí sinh tự do / thí sinh riêng này thì mới add điểm chuyên
+            if (sbd !== "080142") {
+                duLieu[sbd].diem.monChuyen = +(Math.random() * 5 + 5).toFixed(2);
+            }
         }
     }
 }
 
-taoDiem(); // Thực thi hàm tạo điểm ngẫu nhiên[cite: 2]
-window.duLieu = duLieu; // Xuất dữ liệu ra phạm vi toàn cục[cite: 2]
+taoDiem(); // Thực thi hàm tạo điểm ngẫu nhiên
+window.duLieu = duLieu; // Xuất dữ liệu ra phạm vi toàn cục
